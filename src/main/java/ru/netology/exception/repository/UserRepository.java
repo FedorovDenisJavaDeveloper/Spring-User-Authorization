@@ -17,8 +17,8 @@ public class UserRepository {
         userAuthorities.put(new User("Vasya", "0002"), List.of(Authorities.READ, Authorities.WRITE, Authorities.DELETE));
     }
 
-    public List<Authorities> getUserAuthorities(String user, String password) {
-        final var tryUser = new User(user, password);
-        return userAuthorities.getOrDefault(tryUser, null);
+    public List<Authorities> getUserAuthorities(User user) {
+//        final var tryUser = new User(user, password);
+        return userAuthorities.getOrDefault(user, null);
     }
 }
