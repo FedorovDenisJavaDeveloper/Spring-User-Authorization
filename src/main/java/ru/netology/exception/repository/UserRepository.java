@@ -18,7 +18,6 @@ public class UserRepository {
     }
 
     public List<Authorities> getUserAuthorities(User user) {
-//        final var tryUser = new User(user, password);
         return userAuthorities.getOrDefault(user, null);
     }
 }

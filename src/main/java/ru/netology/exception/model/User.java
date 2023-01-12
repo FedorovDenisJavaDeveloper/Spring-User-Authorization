@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class User {
     @NotBlank(message = "User name is empty!")
-    @Size(min = 2,max = 20, message = "User name too short or too long!")
+    @Size(min = 2, max = 20, message = "User name too short or too long!")
     private String user;
     @NotBlank(message = "User password is empty")
     private String password;
